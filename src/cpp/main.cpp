@@ -13,7 +13,7 @@ int main() {
 	auto start = chrono::steady_clock::now();
 	matrix1 = matrix2;
 	auto end = chrono::steady_clock::now();
-	cout << "Elapsed ti[me in microseconds : "
+	cout << "Elapsed time in microseconds : "
 	  << chrono::duration_cast<chrono::microseconds>(end - start).count()
 	  << " us" << endl;
     
