@@ -5,4 +5,4 @@ rs:
 	cargo build --release
 bench:
 	./main.o
-	cargo run
+	cargo run --release
