@@ -14,14 +14,14 @@ int main() {
 	auto start = chrono::steady_clock::now();
 	matrix1 = matrix2;
 	auto end = chrono::steady_clock::now();
-	cout << "Elapsed time in microseconds : "
+	cout << "Elapsed time in assignment : "
 	  << chrono::duration_cast<chrono::microseconds>(end - start).count()
 	  << " us" << endl;
 
 	start = chrono::steady_clock::now();
 	matrix3 = matrix2.cwiseProduct(matrix1);
 	end = chrono::steady_clock::now();
-	cout << "Elapsed time in microseconds : "
+	cout << "Elapsed time in dot product : "
 	  << chrono::duration_cast<chrono::microseconds>(end - start).count()
 	  << " us" << endl;
     
