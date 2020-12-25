@@ -1,5 +1,7 @@
+extern crate blas;
 #[macro_use(azip)]
 extern crate ndarray;
+extern crate openblas_src;
 use ndarray::Axis;
 use ndarray::{Array2, ArrayView2};
 use rand;
