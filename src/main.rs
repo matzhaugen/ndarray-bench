@@ -29,13 +29,9 @@ fn main() {
     let mut start = Instant::now();
     azip!((m1 in &mat1, m2 in &mut mat2) *m2 = -m1);
     let mut duration = start.elapsed();
-    println!("Time elapsed is: {:?}", duration);
+    println!("Time elapsed in assignemnt is: {:?}", duration);
     start = Instant::now();
     let _mat3 = mat1.dot(&mat2);
-    duration = start.elapsed();
-    println!("Time elapsed in dot product is: {:?}", duration);
-    start = Instant::now();
-    let _mat3 = resample(&mat1.view(), &p).dot(&mat2);
     duration = start.elapsed();
     println!("Time elapsed in dot product is: {:?}", duration);
 }
